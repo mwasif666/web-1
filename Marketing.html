@@ -46,7 +46,7 @@
     <!-- MOBILE-MENU END -->
 
     <!-- HEADER CSS START -->
-    <header class="header header-service web-circle">
+    <header class="header image-e-book">
       <div class="header-bottom">
         <div class="container">
           <div class="row align-items-center nav-full">
@@ -148,8 +148,29 @@
             </div>
             <div class="col-md-6">
               <div class="header-image-circle">
-                <div class="image-header" style="height: 50vh"></div>
+                <div class="image-header">
+                  <img src="./Images/./digi-header.png" alt="" />
+                  <div class="img-svgs">
+                    <img src="./Images/e-book-svg.svg" alt="" class="svg-1" />
+                    <img src="./Images/e-book-svg2.svg" alt="" class="svg-2" />
+                  </div>
+                </div>
               </div>
+
+              <!-- <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./Images/slide1.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./Images/slide1.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./Images/slide1.png" alt="" />
+                  </div>
+                </div>
+              </div> -->
+              <!-- <div class="swiper-pagination"></div> -->
             </div>
           </div>
         </div>
@@ -208,57 +229,71 @@
 
     <!-- Our-Services-marketing start -->
 
-    <section class="Our-Services-marketing">
-      <div class="container">
+    <section class="Our-Services-marketing p-0">
+      <div class="container-fluid p-0" style="overflow: hidden">
         <h2 class="text-center py-5">Our Services</h2>
         <div class="row" data-aos="slide-right" data-aos-duration="1500">
-          <div class="col-md-12">
-            <div class="card-grouping">
-              <div class="card">
+          <div class="col-md-6 col-lg-3">
+            <div class="card" onclick="showSection('section1' , this)">
+              <div class="img-services-card">
+                <img src="./Images/mar-1.png" alt="" width="100%" />
+                <div
+                  class="overlay"
+                  style="
+                    background: linear-gradient(
+                      to top,
+                      rgba(66, 172, 225, 0.5),
+                      transparent
+                    );
+                  "
+                ></div>
                 <div class="content-marking-service">
                   <div class="content-on-img">
                     <h4>01</h4>
-                    <p>Link Building & Outreach</p>
+                    <p>Search Engine Optimization</p>
                   </div>
                 </div>
               </div>
-              <div class="card">
-                <div class="content-marking-service content-marking-service-1">
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card" onclick="showSection('section2' , this)">
+              <div class="img-services-card">
+                <img src="./Images/mar-2.png" alt="" width="100%" />
+                <div class="overlay"></div>
+                <div class="content-marking-service">
                   <div class="content-on-img">
-                    <h4>01</h4>
-                    <p>Link Building & Outreach</p>
+                    <h4>02</h4>
+                    <p>Social Media Marketing</p>
                   </div>
                 </div>
               </div>
-              <div class="card">
-                <div class="content-marking-service content-marking-service-2">
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" onclick="startCounter()">
+            <div class="card" onclick="showSection('section3' , this)">
+              <div class="img-services-card">
+                <img src="./Images/mar-3.png" alt="" width="100%" />
+                <div class="overlay"></div>
+                <div class="content-marking-service">
                   <div class="content-on-img">
-                    <h4>01</h4>
-                    <p>Link Building & Outreach</p>
+                    <h4>03</h4>
+                    <p>PPC Services</p>
                   </div>
                 </div>
               </div>
-              <div class="card">
-                <div class="content-marking-service content-marking-service-3">
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card" onclick="showSection('section4' , this)">
+              <div class="img-services-card">
+                <img src="./Images/mar-4.png" alt="" width="100%" />
+                <div class="overlay"></div>
+                <div class="content-marking-service">
                   <div class="content-on-img">
-                    <h4>01</h4>
-                    <p>Link Building & Outreach</p>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="content-marking-service content-marking-service-4">
-                  <div class="content-on-img">
-                    <h4>01</h4>
-                    <p>Link Building & Outreach</p>
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="content-marking-service content-marking-service-5">
-                  <div class="content-on-img">
-                    <h4>01</h4>
-                    <p>Link Building & Outreach</p>
+                    <h4>04</h4>
+                    <p>Email Marketing</p>
                   </div>
                 </div>
               </div>
@@ -267,6 +302,225 @@
         </div>
       </div>
     </section>
+
+    <section
+      id="section1"
+      class="section"
+      data-aos="fade-up"
+      style="display: block"
+    >
+      <div class="container">
+        <div class="row" data-aos="slide-left">
+          <div class="col-lg-6">
+            <h6>SEO SERVICES</h6>
+            <h2>Get More Traffic and Increase Your Online Visibility</h2>
+            <p>
+              SEO Services: Boost your online presence with our tailored SEO
+              solutions. Get more traffic and enhance visibility to propel your
+              business to new heights.
+            </p>
+          </div>
+          <div class="col-lg-6 section-1-content">
+            <img src="./Images/marketing-1.png" alt="" />
+          </div>
+        </div>
+        <div class="row" data-aos="slide-right">
+          <div class="col-lg-6 section-1-content">
+            <img src="./Images/marketing-2.png" alt="" />
+          </div>
+          <div class="col-lg-6">
+            <h6>Our Benefits</h6>
+            <h2>Get the Service to Get More Traffic in Your Website</h2>
+            <p>
+              Our Benefits: Experience increased website traffic with our
+              exceptional services. Unlock the potential for greater online
+              visibility and business growth.
+            </p>
+            <div class="ce_ixelgen_progress_bar block">
+              <div class="progress_bar">
+                <div class="progress_bar_item grid-x">
+                  <div class="progress-value d-flex justify-content-between">
+                    <h6 class="item_label cell auto">Experience</h6>
+                    <div class="item_value cell shrink">0%</div>
+                  </div>
+                  <div class="item_bar cell">
+                    <div class="progress" data-progress="80"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="content-plus-img">
+              <img src="./Images/marketing-3.png" alt="" />
+              <h5>Satisfied Customers</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="section2" class="section" style="display: none">
+      <div class="container">
+        <div class="row" data-aos="slide-left">
+          <div class="col-lg-6" data-aos="slide-left">
+            <h6>SMM Services</h6>
+            <h2>Amplifying your online presence</h2>
+            <p>
+              SMM Services: Elevate your brand's online presence with our
+              strategic Social Media Marketing solutions, effectively amplifying
+              your reach and engagement.
+            </p>
+            <div class="content-plus-img d-flex align-items-center">
+              <img src="./Images/marketing-3.png" alt="" />
+              <h5 class="pt-4 ps-2">More than 20K have joined us</h5>
+            </div>
+          </div>
+          <div class="col-lg-6 section-1-content" data-aos="slide-right">
+            <img src="./Images/marketing-4.png" alt="" />
+          </div>
+        </div>
+        <div class="row" data-aos="slide-right">
+          <div class="col-lg-6 section-1-content" data-aos="slide-right">
+            <img src="./Images/marketing-5.png" alt="" />
+          </div>
+          <div class="col-lg-6" data-aos="slide-left">
+            <div class="contant-section-2">
+              <div class="contant-section-21">
+                <h2>Increass Traffic and Social Engagement</h2>
+                <p>
+                  Includes using high-quality keywords to write strategic
+                  content that ranks, as well as descriptive metadata and
+                  meaningful image alt text.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="section3" class="section" style="display: none">
+      <div class="container">
+        <div class="row" data-aos="slide-left">
+          <div class="col-lg-6">
+            <h6>Pay Per Click Services</h6>
+            <h2>Increase your online visibility and drive more traffic</h2>
+            <p>
+              Pay Per Click Services: Enhance your online visibility and drive
+              increased traffic with our strategic Pay Per Click solutions.
+              Optimize your digital presence for maximum impact.
+            </p>
+          </div>
+          <div class="col-lg-6 section-1-content">
+            <img src="./Images/marketing-6.png" alt="" />
+          </div>
+        </div>
+        <div class="row service-slider-3" data-aos="slide-right">
+          <div class="content-slide-3">
+            <h2 class="text-center">
+              We're proud of the measurable results <br />
+              we deliver for clients
+            </h2>
+          </div>
+          <div class="card-timer-count pt-5">
+            <div class="row">
+              <div class="col-6 col-md-6 col-lg-3">
+                <div class="card d-flex">
+                  <div class="counter-full">
+                    <div class="content-counter d-flex">
+                      <h1 class="counting">500</h1>
+                      <h2 class="pt-3"><i class="fa-solid fa-plus"></i></h2>
+                    </div>
+                    <div class="content-countent2 ps-4 pt-2">
+                      <p>Clients Served</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-6 col-lg-3">
+                <div class="card d-flex">
+                  <div class="counter-full">
+                    <div class="content-counter d-flex">
+                      <h1 class="counting">20</h1>
+                      <h2 class="pt-3"><i class="fa-solid fa-xmark"></i></h2>
+                    </div>
+                    <div class="content-countent2 ps-4 pt-2">
+                      <p>Conversion Rate Increase</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-6 col-lg-3">
+                <div class="card d-flex">
+                  <div class="counter-full">
+                    <div class="content-counter d-flex">
+                      <h1 class="counting">95</h1>
+                      <h2 class="pt-3"><i class="fa-solid fa-percent"></i></h2>
+                    </div>
+                    <div class="content-countent2 ps-4 pt-2">
+                      <p>Retention Rate</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-6 col-lg-3">
+                <div class="card d-flex">
+                  <div class="counter-full">
+                    <div class="content-counter d-flex">
+                      <h1 class="">1</h1>
+                      <h3 class="pt-3">M<i class="fa-solid fa-plus"></i></h3>
+                    </div>
+                    <div class="content-countent2 ps-4 pt-2">
+                      <p>Keywords Optimized</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="section4" class="section" style="display: none">
+      <div class="container">
+        <div class="row" data-aos="slide-right">
+          <div class="col-lg-6 section-1-content" data-aos="slide-right">
+            <img src="./Images/marketing-7.png" alt="" />
+          </div>
+          <div class="col-lg-6" data-aos="slide-left">
+            <div class="contant-section-2">
+              <div class="contant-section-21">
+                <h6>Email Marketing Service</h6>
+                <h2>Amplifying your online presence</h2>
+                <p>
+                  Email Marketing Service: Boost your online presence with our
+                  effective Email Marketing solutions, strategically amplifying
+                  your reach and engagement for optimal results.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <section class="timer" data-aos="fade-up" data-aos-duration="1500">
+            <div class="container">
+              <div class="row">
+                <div class="content-section-4 text-center">
+                  <h1>Create Once, Share Everywhere</h1>
+                  <p>
+                    Easily create reusable payment links, that you can share
+                    with your customers through email marketing.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
     <!-- Our-Services-marketing start -->
 
     <!-- We-are start -->
@@ -292,9 +546,9 @@
           </div>
           <div class="col-md-7">
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley
+              Who We Are: Comprising a team of dedicated digital marketing
+              experts, we are driven by a passion for assisting businesses in
+              achieving online success.
             </p>
           </div>
         </div>
@@ -323,7 +577,7 @@
                     >
                       <div class="content-slide d-flex align-items-center">
                         <img src="./Images/small-img.png" alt="" />
-                        <p>Christina Jim</p>
+                        <p>Emily P. - Marketing Director</p>
                       </div>
                       <div class="content-slide-2">
                         <i class="fa-solid fa-star"></i>
@@ -334,12 +588,10 @@
                       </div>
                     </div>
                     <p id="customer-content-para">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a
-                      type specimen book. It has survived not only five
-                      centuries, but also the leap into electronic.
+                      Incredible results! Their tailored marketing solutions
+                      propelled our brand to the forefront. The dedication to
+                      understanding our unique needs sets them apart. Highly
+                      recommended!
                     </p>
                   </div>
                 </div>
@@ -349,8 +601,8 @@
                       class="content-slider-1 d-flex justify-content-between"
                     >
                       <div class="content-slide d-flex align-items-center">
-                        <img src="./Images/small-img.png" alt="" />
-                        <p>Christina Jim</p>
+                        <img src="./Images/test2.png" class="imd-dim" alt="" />
+                        <p>Johnathan D. -CEO, Tech Innovations Inc.</p>
                       </div>
                       <div class="content-slide-2">
                         <i class="fa-solid fa-star"></i>
@@ -361,12 +613,10 @@
                       </div>
                     </div>
                     <p id="customer-content-para">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a
-                      type specimen book. It has survived not only five
-                      centuries, but also the leap into electronic.
+                      Exceptional services! They seamlessly integrated
+                      cutting-edge technology into our operations, boosting
+                      efficiency and elevating our business to new heights.
+                      Truly a game-changer!
                     </p>
                   </div>
                 </div>
@@ -376,8 +626,8 @@
                       class="content-slider-1 d-flex justify-content-between"
                     >
                       <div class="content-slide d-flex align-items-center">
-                        <img src="./Images/small-img.png" alt="" />
-                        <p>Christina Jim</p>
+                        <img src="./Images/test3.png" class="imd-dim" alt="" />
+                        <p>Sarah M. - IT Manager</p>
                       </div>
                       <div class="content-slide-2">
                         <i class="fa-solid fa-star"></i>
@@ -388,12 +638,10 @@
                       </div>
                     </div>
                     <p id="customer-content-para">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a
-                      type specimen book. It has survived not only five
-                      centuries, but also the leap into electronic.
+                      Outstanding tech support! Their 24/7 availability and
+                      swift resolutions to our IT challenges have been
+                      invaluable. A professional team dedicated to ensuring our
+                      systems run seamlessly.
                     </p>
                   </div>
                 </div>
@@ -403,8 +651,8 @@
                       class="content-slider-1 d-flex justify-content-between"
                     >
                       <div class="content-slide d-flex align-items-center">
-                        <img src="./Images/small-img.png" alt="" />
-                        <p>Christina Jim</p>
+                        <img src="./Images/test4.png" class="imd-dim" alt="" />
+                        <p>Michael S. - CFO</p>
                       </div>
                       <div class="content-slide-2">
                         <i class="fa-solid fa-star"></i>
@@ -415,66 +663,10 @@
                       </div>
                     </div>
                     <p id="customer-content-para">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a
-                      type specimen book. It has survived not only five
-                      centuries, but also the leap into electronic.
-                    </p>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="card customer-slide-card">
-                    <div
-                      class="content-slider-1 d-flex justify-content-between"
-                    >
-                      <div class="content-slide d-flex align-items-center">
-                        <img src="./Images/small-img.png" alt="" />
-                        <p>Christina Jim</p>
-                      </div>
-                      <div class="content-slide-2">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                      </div>
-                    </div>
-                    <p id="customer-content-para">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a
-                      type specimen book. It has survived not only five
-                      centuries, but also the leap into electronic.
-                    </p>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="card customer-slide-card">
-                    <div
-                      class="content-slider-1 d-flex justify-content-between"
-                    >
-                      <div class="content-slide d-flex align-items-center">
-                        <img src="./Images/small-img.png" alt="" />
-                        <p>Christina Jim</p>
-                      </div>
-                      <div class="content-slide-2">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                      </div>
-                    </div>
-                    <p id="customer-content-para">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a
-                      type specimen book. It has survived not only five
-                      centuries, but also the leap into electronic.
+                      Reliable financial services! Their team's expertise in
+                      financial dynamics significantly streamlined our
+                      processes. Accurate, efficient, and always available – a
+                      trusted partner indeed.
                     </p>
                   </div>
                 </div>

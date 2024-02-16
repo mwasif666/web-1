@@ -22,6 +22,18 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Link Slick Theme CSS (Optional) -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./slick-1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./slick-1.8.1/slick/slick-theme.css"
+    />
+
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="Responsive.css" />
@@ -45,7 +57,7 @@
     <!-- MOBILE-MENU END -->
 
     <!-- HEADER CSS START -->
-    <header class="header header-service web-circle">
+    <header class="header image-e-book image-e-book-2">
       <div class="header-bottom">
         <div class="container">
           <div class="row align-items-center nav-full">
@@ -147,8 +159,29 @@
             </div>
             <div class="col-md-6">
               <div class="header-image-circle">
-                <div class="image-header" style="height: 50vh"></div>
+                <div class="image-header">
+                  <img src="./Images/./bpo-header.png" alt="" />
+                  <div class="img-svgs">
+                    <img src="./Images/BPO-svg.svg" alt="" class="svg-1" />
+                    <!-- <img src="./Images/BPO-svg-2.svg" alt="" class="svg-2" /> -->
+                  </div>
+                </div>
               </div>
+
+              <!-- <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./Images/slide1.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./Images/slide1.png" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./Images/slide1.png" alt="" />
+                  </div>
+                </div>
+              </div> -->
+              <!-- <div class="swiper-pagination"></div> -->
             </div>
           </div>
         </div>
@@ -192,9 +225,9 @@
             >
               <h2 class="d-color">Gain Insights From Every Interaction</h2>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
+                Unlock insights from every interaction. Our analytics-driven
+                approach ensures valuable data extraction for informed
+                decisions, fueling business growth and success.
               </p>
               <div class="content-verify">
                 <div class="content-verify1 d-flex align-items-center">
@@ -202,8 +235,9 @@
                   <p>Real Time Dashboard</p>
                 </div>
                 <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
+                  Empower decisions with our Real-Time Dashboard. Instantly
+                  track key metrics, ensuring your business stays on the path to
+                  success.
                 </p>
                 <div class="content-verify1 d-flex align-items-center">
                   <img src="./Images/verify.png" alt="" />
@@ -211,8 +245,8 @@
                 </div>
               </div>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
+                Team coordination with Agent Availability Status, Real-time
+                updates for seamless communication and increased productivity.
               </p>
               <div class="btn-img-card1">
                 <button class="primary-btns">
@@ -232,9 +266,9 @@
         <div class="row text-center d-flex justify-content-center">
           <h3>BPO Solutions</h3>
           <p class="w-75">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley
+            Maximize efficiency with our BPO Solutions. Tailored outsourcing
+            services for cost-effectiveness and streamlined operations, ensuring
+            optimal business performance.
           </p>
         </div>
       </div>
@@ -256,9 +290,9 @@
                   <div class="bpo-card-content2">
                     <h4>Experience & Qualified Staff</h4>
                     <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s.
+                      Benefit from our experienced and qualified staff. Our team
+                      brings expertise and dedication to ensure excellence in
+                      every aspect of your project or service.
                     </p>
                   </div>
                 </div>
@@ -273,9 +307,9 @@
                   <div class="bpo-card-content2">
                     <h4>24/7 Customer Support</h4>
                     <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s.
+                      Reliable 24/7 customer support for your convenience. Our
+                      dedicated team is here to assist you whenever you need
+                      help.
                     </p>
                   </div>
                 </div>
@@ -290,9 +324,8 @@
                   <div class="bpo-card-content2">
                     <h4>Foreign Language Service</h4>
                     <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s.
+                      Global communication made easy. Break language barriers
+                      with our Foreign Language Service for business success.
                     </p>
                   </div>
                 </div>
@@ -322,9 +355,8 @@
             >
               <h2>We Are Building a Customer Base!</h2>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
+                Nurturing relationships, one satisfied customer at a time! Join
+                us in building a strong and loyal customer base together.
               </p>
               <div class="tick-bpo">
                 <div class="tick-bpo-1 d-flex gap-5">
@@ -400,35 +432,188 @@
     </section>
     <!-- Deliver content End -->
 
-    <section class="Bpo-Video">
+    <!-- BPO SWIOER -->
+    <section
+      class="service-card Animation-particle BPO_card"
+      data-aos="fade-up"
+      data-aos-duration="1500"
+    >
       <div class="container">
-        <div class="row">
-          <div class="image-video-content">
-            <img src="./Images/Bpo-12.png" alt="" />
-            <i class="fa-regular fa-circle-play"></i>
-          </div>
-          <div class="image-video-content-1">
-            <div class="timer-videp-content d-flex justify-content-end">
-              <div class="timer-videp-content-1">
-                <div class="loader loader-2">
-                  <span class="count">15</span>
-                  <span style="font-size: 80px">+</span>
-                  <p class="">Years Of Experience</p>
-                </div>
+        <h2 class="text-center pb-5">OUR SERVICES</h2>
+        <div class="slick-BPO">
+          <div class="slick-slide">
+            <div class="col">
+              <div
+                class="card card-2"
+                data-aos="slide-right"
+                data-aos-duration="1500"
+              >
+                <img src="./Images/b1.png" alt="" />
+                <h4>Customer Support</h4>
+                <p>
+                  Digital Giants BPO provides customer support services tailored
+                  to handle customer inquiries, complaints, and feedback. Our
+                  team ensures prompt and efficient responses, enhancing
+                  customer satisfaction and loyalty.
+                </p>
               </div>
-              <div class="timer-videp-content-1">
-                <div class="loader loader-2">
-                  <span class="count">29.5</span>
-                  <span style="font-size: 80px">K</span>
-                  <p class="text-center">Total Customers Served</p>
-                </div>
+            </div>
+          </div>
+          <div class="slick-slide">
+            <div class="col">
+              <div
+                class="card card-2"
+                data-aos="slide-right"
+                data-aos-duration="1500"
+              >
+                <img src="./Images/b2.png" alt="" />
+                <h4>Telemarketing</h4>
+                <p>
+                  Our telemarketing services focus on generating leads,
+                  promoting products or services, and conducting market research
+                  through outbound calls. We employ skilled professionals and
+                  utilize advanced technology to maximize conversion rates and
+                  ROI.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="slick-slide">
+            <div class="col">
+              <div
+                class="card card-2"
+                data-aos="slide-left"
+                data-aos-duration="1500"
+              >
+                <img src="./Images/b3.png" alt="" />
+                <h4>Order Processing</h4>
+                <p>
+                  BPO streamlines the order processing workflow by efficiently
+                  managing orders, processing payments, and coordinating
+                  shipments. Our system ensures accuracy, speed, and customer
+                  satisfaction throughout the order fulfillment process.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="slick-slide">
+            <div class="col">
+              <div
+                class="card card-2"
+                data-aos="slide-left"
+                data-aos-duration="1500"
+              >
+                <img src="./Images/b4.png" alt="" />
+                <h4>Technical Support</h4>
+                <p>
+                  We offer technical support services to assist customers with
+                  product or service related queries, troubleshooting, and
+                  guidance. Our team is trained to handle complex technical
+                  issues, ensuring seamless user experiences and minimizing
+                  downtime.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="slick-slide">
+            <div class="col">
+              <div
+                class="card card-2"
+                data-aos="slide-right"
+                data-aos-duration="1500"
+              >
+                <img src="./Images/b5.png" alt="" />
+                <h4>Debt Collections</h4>
+                <p>
+                  Businesses worldwide face substantial losses due to delayed
+                  debt recovery, especially in financial services such as credit
+                  cards, housing loans, and insurance. The primary challenge
+                  stems from internal teams' limited time and focus on debt
+                  collection, leaving a gap in ecovering payments from existing
+                  clients.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="slick-slide">
+            <div class="col">
+              <div
+                class="card card-2"
+                data-aos="slide-right"
+                data-aos-duration="1500"
+              >
+                <img src="./Images/b6.png" alt="" />
+                <h4>Back Office Support</h4>
+                <p>
+                  Our back office support services encompass various
+                  administrative tasks, including data entry, document
+                  processing, and inventory management. By outsourcing these
+                  functions to Renexus BPO, businesses can improve efficiency
+                  and focus on core operations.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="slick-slide">
+            <div class="col">
+              <div
+                class="card card-2"
+                data-aos="slide-left"
+                data-aos-duration="1500"
+              >
+                <img src="./Images/b7.png" alt="" />
+                <h4>Live Chat Support</h4>
+                <p>
+                  We offer live chat support services to engage website
+                  visitors, address inquiries in real-time, and enhance online
+                  customer experiences. Our team utilizes chatbots and trained
+                  agents to provide instant assistance, increasing conversions
+                  and customer satisfaction.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="slick-slide">
+            <div class="col">
+              <div
+                class="card card-2"
+                data-aos="slide-left"
+                data-aos-duration="1500"
+              >
+                <img src="./Images/b8.png" alt="" />
+                <h4>Social Media Manage</h4>
+                <p>
+                  BPO manages social media platforms, creating engaging content,
+                  monitoring interactions, and analyzing performance matric
+                  social media experts develop tailored strategies to increase
+                  brand awareness, engagement, and customer loyalty.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="slick-slide">
+            <div class="col">
+              <div
+                class="card card-2"
+                data-aos="slide-left"
+                data-aos-duration="1500"
+              >
+                <img src="./Images/b9.png" alt="" />
+                <h4>IT Outsourcing</h4>
+                <p>
+                  Our IT outsourcing services include infrastructure management,
+                  software development, cybersecurity, and IT consulting.
+                  Renexus BPO leverages advanced technology and expertise to
+                  optimize IT operations,enhance security, and support business
+                  growth.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-
     <!-- Customer Start -->
     <section
       class="Customer-section"
@@ -450,7 +635,7 @@
                     >
                       <div class="content-slide d-flex align-items-center">
                         <img src="./Images/small-img.png" alt="" />
-                        <p>Christina Jim</p>
+                        <p>Emily P. - Marketing Director</p>
                       </div>
                       <div class="content-slide-2">
                         <i class="fa-solid fa-star"></i>
@@ -461,12 +646,10 @@
                       </div>
                     </div>
                     <p id="customer-content-para">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a
-                      type specimen book. It has survived not only five
-                      centuries, but also the leap into electronic.
+                      Incredible results! Their tailored marketing solutions
+                      propelled our brand to the forefront. The dedication to
+                      understanding our unique needs sets them apart. Highly
+                      recommended!
                     </p>
                   </div>
                 </div>
@@ -476,8 +659,8 @@
                       class="content-slider-1 d-flex justify-content-between"
                     >
                       <div class="content-slide d-flex align-items-center">
-                        <img src="./Images/small-img.png" alt="" />
-                        <p>Christina Jim</p>
+                        <img src="./Images/test2.png" class="imd-dim" alt="" />
+                        <p>Johnathan D. -CEO, Tech Innovations Inc.</p>
                       </div>
                       <div class="content-slide-2">
                         <i class="fa-solid fa-star"></i>
@@ -488,12 +671,10 @@
                       </div>
                     </div>
                     <p id="customer-content-para">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a
-                      type specimen book. It has survived not only five
-                      centuries, but also the leap into electronic.
+                      Exceptional services! They seamlessly integrated
+                      cutting-edge technology into our operations, boosting
+                      efficiency and elevating our business to new heights.
+                      Truly a game-changer!
                     </p>
                   </div>
                 </div>
@@ -503,8 +684,8 @@
                       class="content-slider-1 d-flex justify-content-between"
                     >
                       <div class="content-slide d-flex align-items-center">
-                        <img src="./Images/small-img.png" alt="" />
-                        <p>Christina Jim</p>
+                        <img src="./Images/test3.png" class="imd-dim" alt="" />
+                        <p>Sarah M. - IT Manager</p>
                       </div>
                       <div class="content-slide-2">
                         <i class="fa-solid fa-star"></i>
@@ -515,12 +696,10 @@
                       </div>
                     </div>
                     <p id="customer-content-para">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a
-                      type specimen book. It has survived not only five
-                      centuries, but also the leap into electronic.
+                      Outstanding tech support! Their 24/7 availability and
+                      swift resolutions to our IT challenges have been
+                      invaluable. A professional team dedicated to ensuring our
+                      systems run seamlessly.
                     </p>
                   </div>
                 </div>
@@ -530,8 +709,8 @@
                       class="content-slider-1 d-flex justify-content-between"
                     >
                       <div class="content-slide d-flex align-items-center">
-                        <img src="./Images/small-img.png" alt="" />
-                        <p>Christina Jim</p>
+                        <img src="./Images/test4.png" class="imd-dim" alt="" />
+                        <p>Michael S. - CFO</p>
                       </div>
                       <div class="content-slide-2">
                         <i class="fa-solid fa-star"></i>
@@ -542,66 +721,10 @@
                       </div>
                     </div>
                     <p id="customer-content-para">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a
-                      type specimen book. It has survived not only five
-                      centuries, but also the leap into electronic.
-                    </p>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="card customer-slide-card">
-                    <div
-                      class="content-slider-1 d-flex justify-content-between"
-                    >
-                      <div class="content-slide d-flex align-items-center">
-                        <img src="./Images/small-img.png" alt="" />
-                        <p>Christina Jim</p>
-                      </div>
-                      <div class="content-slide-2">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                      </div>
-                    </div>
-                    <p id="customer-content-para">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a
-                      type specimen book. It has survived not only five
-                      centuries, but also the leap into electronic.
-                    </p>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="card customer-slide-card">
-                    <div
-                      class="content-slider-1 d-flex justify-content-between"
-                    >
-                      <div class="content-slide d-flex align-items-center">
-                        <img src="./Images/small-img.png" alt="" />
-                        <p>Christina Jim</p>
-                      </div>
-                      <div class="content-slide-2">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                      </div>
-                    </div>
-                    <p id="customer-content-para">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a
-                      type specimen book. It has survived not only five
-                      centuries, but also the leap into electronic.
+                      Reliable financial services! Their team's expertise in
+                      financial dynamics significantly streamlined our
+                      processes. Accurate, efficient, and always available – a
+                      trusted partner indeed.
                     </p>
                   </div>
                 </div>
@@ -742,6 +865,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script
@@ -750,7 +874,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
     <script src="App.js"></script>
   </body>
 </html>

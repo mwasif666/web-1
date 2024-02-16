@@ -1,0 +1,114 @@
+    <section class="our-services" data-aos="fade-up" data-aos-duration="1500">
+      <div class="container">
+        <div class="row">
+          <h3 class="text-center py-4 our-heading">Our Services</h3>
+          <div class="col-md-12">
+            <div class="d-flex align-items-start">
+              <div
+                class="nav flex-column nav-pills me-3"
+                id="v-pills-tab"
+                role="tablist"
+                aria-orientation="vertical"
+              >
+                <button
+                  class="content-btn nav-link active"
+                  data-target="content1"
+                  type="button"
+                >
+                  Website Design
+                </button>
+                <button
+                  class="nav-link"
+                  class="content-btn nav-link"
+                  data-target="content2"
+                  type="button"
+                >
+                  Website Development
+                </button>
+                <button
+                  class="nav-link"
+                  id="v-pills-messages-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-messages"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-messages"
+                  aria-selected="false"
+                >
+                  Application Design
+                </button>
+                <button
+                  class="nav-link"
+                  id="v-pills-settings-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-settings"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-settings"
+                  aria-selected="false"
+                >
+                  Application Development
+                </button>
+              </div>
+
+              <!-- Content -->
+
+              <div class="tab-content" id="v-pills-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="v-pills-home"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-home-tab"
+                  tabindex="0"
+                >
+                  <div class="row"></div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="v-pills-profile"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-profile-tab"
+                  tabindex="0"
+                >
+                  <img src="./Images/tab-img.png" alt="" />
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="v-pills-messages"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-messages-tab"
+                  tabindex="0"
+                >
+                  <img src="./Images/tab-img.png" alt="" />
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="v-pills-settings"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-settings-tab"
+                  tabindex="0"
+                >
+                  <img src="./Images/tab-img.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+ const buttons = document.querySelectorAll(".content-btn");
+
+ buttons.forEach((button) => {
+   button.addEventListener("click", function () {
+     // Hide arrow on all buttons
+     const arrows = document.querySelectorAll(".img-arrow-hide");
+     arrows.forEach((arrow) => {
+       arrow.classList.add("d-none");
+     });
+
+     // Show arrow on currently clicked button
+     const arrow = this.querySelector(".img-arrow-hide");
+     arrow.classList.remove("d-none");
+   });
+ });

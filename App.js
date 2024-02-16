@@ -1,5 +1,3 @@
-
-
 $(".navigation-list").clone().appendTo(".mobile-menu-body");
 
 $(".hamburger").on("click", function () {
@@ -252,29 +250,25 @@ var swiper = new Swiper(".mySwiper2", {
     // Add more breakpoints as needed
   },
 });
+// Define options for all circular progress bars
+let options = [
+  { fill: "#42ACE1", value: 0.89 },
+  { fill: "#0C2646", value: 0.5 },
+  { fill: "#0C2646", value: 0.9 },
+  { fill: "#42ACE1", value: 0.6 },
+];
 
-let options = {
-  startAngle: -1.55,
-  size: 100,
-  value: 0.85,
-  fill: "#42ACE1",
-};
-$(".circle .bar")
-  .circleProgress(options)
-  .on("circle-animation-progress", function (event, progress, stepValue) {
-    $(this)
-      .parent()
-      .find("span")
-      .text(String(stepValue.toFixed(2).substr(2)) + "%");
-  });
-$(".js .bar").circleProgress({
-  value: 0.7,
-});
-$(".node .bar").circleProgress({
-  value: 0.9,
-});
-$(".react .bar").circleProgress({
-  value: 0.6,
+// Loop through each circular progress bar and set its value dynamically
+$(".circular-bar").each(function (index) {
+  let $bar = $(this).find(".bar");
+  let $span = $(this).find(".box span");
+  let currentOptions = { ...options[index], startAngle: -1.55, size: 100 };
+
+  $bar
+    .circleProgress(currentOptions)
+    .on("circle-animation-progress", function (event, progress, stepValue) {
+      $span.text(String(stepValue.toFixed(2).substr(2)) + "%");
+    });
 });
 
 var swiper = new Swiper(".web-sec", {
@@ -337,3 +331,128 @@ const toggleForm = () => {
   const container = document.querySelector(".form-login-container");
   container.classList.toggle("active");
 };
+// Marketing
+function showSection(sectionId, clickedCard) {
+  // Hide all sections
+  var sections = document.getElementsByClassName("section");
+  for (var i = 0; i < sections.length; i++) {
+    sections[i].style.display = "none";
+  }
+  // Show the selected section
+  document.getElementById(sectionId).style.display = "block";
+
+  // Toggle 'active' class on cards
+  var cards = document.querySelectorAll(".Our-Services-marketing .card");
+  for (var i = 0; i < cards.length; i++) {
+    cards[i].classList.remove("active");
+    cards[i].querySelector(".overlay").style.background = "rgba(0, 0, 0, 0.5)"; // Reset overlay color
+  }
+  clickedCard.classList.add("active");
+  clickedCard.querySelector(".overlay").style.background =
+    "linear-gradient(to top, rgba(66, 172, 225, 0.5), transparent)"; // Change overlay color for active card
+}
+// Counter
+
+$(document).ready(function () {
+  // Attach click event listener to section 3
+
+  startCounter();
+});
+
+function startCounter() {
+  // Function to animate the counter
+  function animateCounter($element, targetCount) {
+    $({ count: 0 }).animate(
+      { count: targetCount },
+      {
+        duration: 2000, // Animation duration in milliseconds
+        easing: "linear", // Animation easing function
+        step: function () {
+          $element.text(Math.floor(this.count));
+        },
+        complete: function () {
+          $element.text(targetCount);
+        },
+      }
+    );
+  }
+
+  // Function to handle the counter animation for each element
+  function handleCounterAnimation() {
+    $(".counting").each(function () {
+      var targetCount = parseInt($(this).text(), 10);
+      animateCounter($(this), targetCount);
+    });
+  }
+
+  // Call the function to start counter animations
+  handleCounterAnimation();
+}
+
+// Button
+$(document).ready(function () {
+  // Hide all content sections except the default one
+  $(".content-section").not("#content1").hide();
+
+  $(".content-btn").click(function () {
+    var target = $(this).data("target");
+    // Hide all content sections
+    $(".content-section").hide();
+    // Show the content section corresponding to the clicked button
+    $("#" + target).show();
+  });
+});
+
+// Arrow
+const buttons = document.querySelectorAll(".content-btn");
+
+buttons.forEach((button) => {
+  button.addEventListener("click", function () {
+    // Hide arrow on all buttons
+    const arrows = document.querySelectorAll(".img-arrow-hide");
+    arrows.forEach((arrow) => {
+      arrow.classList.add("d-none");
+    });
+
+    // Show arrow on currently clicked button
+    const arrow = this.querySelector(".img-arrow-hide");
+    arrow.classList.remove("d-none");
+
+    // Reset text color of all buttons to black
+    buttons.forEach((btn) => {
+      const buttonText = btn.querySelector("h5.heading-color");
+      if (btn !== button) {
+        buttonText.style.color = "black";
+      } else {
+        // Change text color of the clicked button's text to blue
+        buttonText.style.color = "#42ACE1";
+      }
+    });
+  });
+});
+
+// BPO SWeiper
+
+// Initialize Slick Slider
+$(document).ready(function () {
+  $(".slick-BPO").slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    prevArrow: '<div class="slick-prev"></div>',
+    nextArrow: '<div class="slick-next"></div>',
+    responsive: [
+      {
+        breakpoint: 768, // Adjust as needed
+        settings: {
+          slidesToShow: 1,
+        },
+        breakpoint: 992, // Adjust as needed
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+    ],
+  });
+});

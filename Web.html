@@ -22,7 +22,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/fontawesome-6-pro@6.4.0/css/all.min.css"
+      integrity="sha256-R6pa/zpbhz9IjJIAXKP/0Kk53cRwfsjdik4Ojf9lOrQ="
+      crossorigin="anonymous"
+    />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="Responsive.css" />
@@ -46,7 +51,7 @@
     <!-- MOBILE-MENU END -->
 
     <!-- HEADER CSS START -->
-    <header class="header header-service web-circle">
+    <header class="header image-e-book-2 image-e-book">
       <div class="header-bottom">
         <div class="container">
           <div class="row align-items-center nav-full">
@@ -148,7 +153,13 @@
             </div>
             <div class="col-md-6">
               <div class="header-image-circle">
-                <div class="image-header" style="height: 50vh"></div>
+                <div class="image-header">
+                  <img src="./Images/./web-header.png" alt="" />
+                  <div class="img-svgs">
+                    <img src="./Images/web-svg.svg" alt="" class="svg-1" />
+                    <img src="./Images/web-svg2.svg" alt="" class="svg-2" />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -168,7 +179,7 @@
           <div class="col">
             <div class="loader loader-2 text-center">
               <span class="count">12</span>
-              <span style="font-size: 80px">K</span>
+              <span style="font-size: 80px">K+</span>
               <p class="text-center">Happy Customer</p>
             </div>
           </div>
@@ -243,9 +254,9 @@
             >
               <h2 class="d-color">Unlock Revenue Growth For Your Business</h2>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text.
+                Unlock business success with our tailored solutions. Experience
+                revenue growth and elevate your brand to new heights with our
+                strategic services.
               </p>
               <div class="web-progress">
                 <div class="row">
@@ -329,128 +340,287 @@
 
     <!-- Our Services Start-->
 
-    <section class="our-services" data-aos="fade-up" data-aos-duration="1500">
+    <section class="buttons-hide-show our-services">
       <div class="container">
         <div class="row">
-          <h3 class="text-center py-4 our-heading">Our Services</h3>
-          <div class="col-md-8" data-aos="slide-right" data-aos-duration="1500">
-            <div class="d-flex align-items-start">
-              <div
-                class="nav flex-column nav-pills me-3"
-                id="v-pills-tab"
-                role="tablist"
-                aria-orientation="vertical"
-              >
-                <button
-                  class="nav-link active"
-                  id="v-pills-home-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#v-pills-home"
-                  type="button"
-                  role="tab"
-                  aria-controls="v-pills-home"
-                  aria-selected="true"
-                >
-                  Website Design
-                </button>
-                <button
-                  class="nav-link"
-                  id="v-pills-profile-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#v-pills-profile"
-                  type="button"
-                  role="tab"
-                  aria-controls="v-pills-profile"
-                  aria-selected="false"
-                >
-                  Website Development
-                </button>
-                <button
-                  class="nav-link"
-                  id="v-pills-messages-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#v-pills-messages"
-                  type="button"
-                  role="tab"
-                  aria-controls="v-pills-messages"
-                  aria-selected="false"
-                >
-                  Application Design
-                </button>
-                <button
-                  class="nav-link"
-                  id="v-pills-settings-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#v-pills-settings"
-                  type="button"
-                  role="tab"
-                  aria-controls="v-pills-settings"
-                  aria-selected="false"
-                >
-                  Application Development
-                </button>
+          <div class="col-md-3">
+            <div class="buttons-hide-show-1">
+              <button class="content-btn nav-link" data-target="content1">
+                <h5 class="heading-color heading-color-active">
+                  Web Development
+                </h5>
+                <div class="img-arrow-hide">
+                  <img src="./Images/arrow-3.gif" alt="" />
+                </div>
+              </button>
+              <button class="content-btn nav-link" data-target="content2">
+                <h5 class="heading-color">Logo Design</h5>
+                <div class="img-arrow-hide d-none">
+                  <img src="./Images/arrow-3.gif" alt="" />
+                </div>
+              </button>
+              <button class="content-btn nav-link" data-target="content3">
+                <h5 class="heading-color">Application Development</h5>
+                <div class="img-arrow-hide d-none">
+                  <img src="./Images/arrow-3.gif" alt="" />
+                </div>
+              </button>
+            </div>
+          </div>
+          <div class="col-md-12 content-section" id="content1">
+            <div class="row offset-md-3">
+              <div class="col-md-6">
+                <img
+                  src="./Images/tab-img.png"
+                  id="img-service-chnage"
+                  alt=""
+                />
               </div>
-              <div class="tab-content" id="v-pills-tabContent">
-                <div
-                  class="tab-pane fade show active"
-                  id="v-pills-home"
-                  role="tabpanel"
-                  aria-labelledby="v-pills-home-tab"
-                  tabindex="0"
-                >
-                  <img src="./Images/tab-img.png" alt="" />
+              <div class="col-md-6">
+                <div class="our-service-img">
+                  <img src="./Images/web-3.png" alt="" />
                 </div>
-                <div
-                  class="tab-pane fade"
-                  id="v-pills-profile"
-                  role="tabpanel"
-                  aria-labelledby="v-pills-profile-tab"
-                  tabindex="0"
-                >
-                  <img src="./Images/tab-img.png" alt="" />
+                <div class="our-service-img-content py-3">
+                  <p>
+                    Web Development: Elevate your online presence with our
+                    skilled web development services, combining sleek designs
+                    with robust functionality for an exceptional user
+                    experience.
+                  </p>
+                  <div
+                    class="our-service-img-content-1 d-flex align-items-center gap-3 my-4"
+                  >
+                    <img src="./Images/verify.png" alt="" />
+                    <p>Real Time Dashboard</p>
+                  </div>
+                  <div
+                    class="our-service-img-content-1 d-flex align-items-center gap-3 my-4"
+                  >
+                    <img src="./Images/verify.png" alt="" />
+                    <p>Real Time Dashboard</p>
+                  </div>
                 </div>
-                <div
-                  class="tab-pane fade"
-                  id="v-pills-messages"
-                  role="tabpanel"
-                  aria-labelledby="v-pills-messages-tab"
-                  tabindex="0"
-                >
-                  <img src="./Images/tab-img.png" alt="" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 portfolio-2">
+                <section class="portfolio py-5">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="content text-center">
+                          <h3 class="pb-5">Our Completed Projects</h3>
+                        </div>
+                      </div>
+
+                      <div class="swiper web-sec">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="webdeign" data-category="transition">
+                              <a
+                                class=""
+                                data-fancybox="port"
+                                href="./Images/web-4.png"
+                              >
+                                <figure>
+                                  <img class="lazy" src="./Images/web-4.png" />
+                                </figure>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="webdeign" data-category="transition">
+                              <a
+                                class=""
+                                data-fancybox="port"
+                                href="./Images/web-5.png"
+                              >
+                                <figure>
+                                  <img class="lazy" src="./Images/web-5.png" />
+                                </figure>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="webdeign" data-category="transition">
+                              <a
+                                class=""
+                                data-fancybox="port"
+                                href="./Images/web-6.png"
+                              >
+                                <figure>
+                                  <img class="lazy" src="./Images/web-6.png" />
+                                </figure>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="webdeign" data-category="transition">
+                              <a
+                                class=""
+                                data-fancybox="port"
+                                href="./Images/web-4.png"
+                              >
+                                <figure>
+                                  <img class="lazy" src="./Images/web-4.png" />
+                                </figure>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="webdeign" data-category="transition">
+                              <a
+                                class=""
+                                data-fancybox="port"
+                                href="./Images/web-5.png"
+                              >
+                                <figure>
+                                  <img class="lazy" src="./Images/web-5.png" />
+                                </figure>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="webdeign" data-category="transition">
+                              <a
+                                class=""
+                                data-fancybox="port"
+                                href="./Images/web-6.png"
+                              >
+                                <figure>
+                                  <img class="lazy" src="./Images/web-6.png" />
+                                </figure>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="web-navigations">
+                        <div class="buttons-nav">
+                          <div class="swiper-button-next"></div>
+                          <div class="swiper-button-prev"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 content-section" id="content2">
+            <div class="row offset-md-3">
+              <div class="col-md-6">
+                <img
+                  src="./Images/tab-img-2.png"
+                  id="img-service-chnage"
+                  alt=""
+                />
+              </div>
+              <div class="col-md-6">
+                <div class="our-service-img">
+                  <img src="./Images/logo-png.png" alt="" />
                 </div>
-                <div
-                  class="tab-pane fade"
-                  id="v-pills-settings"
-                  role="tabpanel"
-                  aria-labelledby="v-pills-settings-tab"
-                  tabindex="0"
-                >
-                  <img src="./Images/tab-img.png" alt="" />
+                <div class="our-service-img-content py-3">
+                  <p>
+                    Logo Design: Unleash the full potential of your brand with
+                    our exceptional design expertise. Beyond creating visually
+                    appealing logos, we delve deep into understanding your
+                    business essence. This ensures a distinctive and memorable
+                    visual identity that not only captivates but also
+                    communicates the core values of your brand, leaving an
+                    indelible mark on your audience's consciousness.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 portfolio-3">
+                <div class="container py-5">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="content text-center">
+                        <h3 class="pb-5">Our Completed Projects</h3>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <img src="./Images/tab-1.png" alt="" />
+                    </div>
+                    <div class="col-md-4">
+                      <img src="./Images/tab-2.png" alt="" />
+                    </div>
+                    <div class="col-md-4">
+                      <img src="./Images/tab-3.png" alt="" />
+                    </div>
+                    <div class="col-md-4">
+                      <img src="./Images/tab-4.png" alt="" />
+                    </div>
+                    <div class="col-md-4">
+                      <img src="./Images/tab-5.png" alt="" />
+                    </div>
+                    <div class="col-md-4">
+                      <img src="./Images/tab-6.png" alt="" />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-4" data-aos="fade-up" data-aos-duration="1500">
-            <div class="our-service-img">
-              <img src="./Images/web-3.png" alt="" />
-            </div>
-            <div class="our-service-img-content py-3">
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-              </p>
-              <div
-                class="our-service-img-content-1 d-flex align-items-center gap-3 my-4"
-              >
-                <img src="./Images/verify.png" alt="" />
-                <p>Real Time Dashboard</p>
+          <div class="col-md-12 content-section" id="content3">
+            <div class="row offset-md-3">
+              <div class="col-md-6">
+                <img
+                  src="./Images/tab-img-3.png"
+                  id="img-service-chnage"
+                  alt=""
+                />
               </div>
-              <div
-                class="our-service-img-content-1 d-flex align-items-center gap-3 my-4"
-              >
-                <img src="./Images/verify.png" alt="" />
-                <p>Real Time Dashboard</p>
+              <div class="col-md-6">
+                <div class="our-service-img">
+                  <img src="./Images/app-png.png" alt="" />
+                </div>
+                <div class="our-service-img-content py-3">
+                  <p>
+                    Application Development: Propel your vision into reality
+                    with our expert development team. We transform your ideas
+                    into powerful, user-friendly applications, infusing
+                    innovation and efficiency into every aspect of your digital
+                    projects. With a commitment to excellence, we craft
+                    applications that not only meet but exceed industry
+                    standards, ensuring a seamless and engaging user experience
+                    for your audience.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 portfolio-3">
+                <div class="container py-5">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="content text-center">
+                        <h3 class="pb-5">Our Completed Projects</h3>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <img src="./Images/tab-7.png" alt="" />
+                    </div>
+                    <div class="col-md-4">
+                      <img src="./Images/tab-8.png" alt="" />
+                    </div>
+                    <div class="col-md-4">
+                      <img src="./Images/tab-9.png" alt="" />
+                    </div>
+                    <div class="col-md-4">
+                      <img src="./Images/tab-10.png" alt="" />
+                    </div>
+                    <div class="col-md-4">
+                      <img src="./Images/tab-11.png" alt="" />
+                    </div>
+                    <div class="col-md-4">
+                      <img src="./Images/tab-12.png" alt="" />
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -458,89 +628,88 @@
       </div>
     </section>
 
-    <!-- Portfolio start -->
-    <section
-      class="portfolio py-5"
-      data-aos="fade-down"
-      data-aos-duration="1500"
-    >
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="content text-center">
-              <h3 class="pb-5">Our Completed Projects</h3>
+    <!-- Pricing Table -->
+    <section class="pricing-table">
+      <div class="container">
+        <div class="pricing">
+          <div class="plan">
+            <a href="#" class="popular-span">Place Order</a>
+            <div class="plan-upper-heading text-center">
+              <h2>BASIC</h2>
+              <div class="price">
+                <span class="d-font-weight"> $99</span>/month
+              </div>
             </div>
+            <hr />
+            <ul class="features">
+              <li><i class="fa-solid fa-period"></i> 5 Stock Photos</li>
+              <li><i class="fa-solid fa-period"></i> 5 Page Website</li>
+              <li><i class="fa-solid fa-period"></i> 3 Banner Design</li>
+              <li><i class="fa-solid fa-period"></i> 1 jQuery Slider Banner</li>
+              <li>
+                <i class="fa-solid fa-period"></i> FREE Google Friendly Sitemap
+              </li>
+              <li>
+                <i class="fa-solid fa-period"></i> Complete W3C Certified HTML
+              </li>
+              <li><i class="fa-solid fa-period"></i> Facebook Page Design</li>
+            </ul>
           </div>
-
-          <div class="swiper web-sec">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="webdeign" data-category="transition">
-                  <a class="" data-fancybox="port" href="./Images/web-4.png">
-                    <figure>
-                      <img class="lazy" src="./Images/web-4.png" />
-                    </figure>
-                  </a>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="webdeign" data-category="transition">
-                  <a class="" data-fancybox="port" href="./Images/web-5.png">
-                    <figure>
-                      <img class="lazy" src="./Images/web-5.png" />
-                    </figure>
-                  </a>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="webdeign" data-category="transition">
-                  <a class="" data-fancybox="port" href="./Images/web-6.png">
-                    <figure>
-                      <img class="lazy" src="./Images/web-6.png" />
-                    </figure>
-                  </a>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="webdeign" data-category="transition">
-                  <a class="" data-fancybox="port" href="./Images/web-4.png">
-                    <figure>
-                      <img class="lazy" src="./Images/web-4.png" />
-                    </figure>
-                  </a>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="webdeign" data-category="transition">
-                  <a class="" data-fancybox="port" href="./Images/web-5.png">
-                    <figure>
-                      <img class="lazy" src="./Images/web-5.png" />
-                    </figure>
-                  </a>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="webdeign" data-category="transition">
-                  <a class="" data-fancybox="port" href="./Images/web-6.png">
-                    <figure>
-                      <img class="lazy" src="./Images/web-6.png" />
-                    </figure>
-                  </a>
-                </div>
+          <div class="plan popular">
+            <a href="#" class="popular-span">Place Order</a>
+            <div class="plan-upper-heading text-center">
+              <h2>PROFESSIONAL</h2>
+              <div class="price">
+                <span class="d-font-weight">$99</span>/month
               </div>
             </div>
+            <hr />
+            <ul class="features">
+              <li><i class="fa-solid fa-period"></i> 5 Stock Photos</li>
+              <li><i class="fa-solid fa-period"></i> 5 Page Website</li>
+              <li><i class="fa-solid fa-period"></i> 3 Banner Design</li>
+              <li><i class="fa-solid fa-period"></i> 1 jQuery Slider Banner</li>
+              <li>
+                <i class="fa-solid fa-period"></i> FREE Google Friendly Sitemap
+              </li>
+              <li>
+                <i class="fa-solid fa-period"></i> Complete W3C Certified HTML
+              </li>
+              <li><i class="fa-solid fa-period"></i> Facebook Page Design</li>
+              <li>
+                <i class="fa-solid fa-period"></i> Complete W3C Certified HTML
+              </li>
+              <li><i class="fa-solid fa-period"></i> Facebook Page Design</li>
+              <li><i class="fa-solid fa-period"></i> Twitter Page Design</li>
+              <li><i class="fa-solid fa-period"></i> YouTube Page Design</li>
+            </ul>
           </div>
-          <div class="web-navigations">
-            <div class="buttons-nav">
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
+          <div class="plan">
+            <a href="#" class="popular-span">Place Order</a>
+            <div class="plan-upper-heading text-center">
+              <h2>ULTIMATE</h2>
+              <div class="price">
+                <span class="d-font-weight">$99</span>/month
+              </div>
             </div>
+            <hr />
+            <ul class="features">
+              <li><i class="fa-solid fa-period"></i> 5 Stock Photos</li>
+              <li><i class="fa-solid fa-period"></i> 5 Page Website</li>
+              <li><i class="fa-solid fa-period"></i> 3 Banner Design</li>
+              <li><i class="fa-solid fa-period"></i> 1 jQuery Slider Banner</li>
+              <li>
+                <i class="fa-solid fa-period"></i> FREE Google Friendly Sitemap
+              </li>
+              <li>
+                <i class="fa-solid fa-period"></i> Complete W3C Certified HTML
+              </li>
+              <li><i class="fa-solid fa-period"></i> Facebook Page Design</li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
-    <!-- Portfolio End -->
-
     <!-- Customer Start -->
     <section
       class="Customer-section"
@@ -562,7 +731,7 @@
                     >
                       <div class="content-slide d-flex align-items-center">
                         <img src="./Images/small-img.png" alt="" />
-                        <p>Christina Jim</p>
+                        <p>Emily P. - Marketing Director</p>
                       </div>
                       <div class="content-slide-2">
                         <i class="fa-solid fa-star"></i>
@@ -573,12 +742,10 @@
                       </div>
                     </div>
                     <p id="customer-content-para">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a
-                      type specimen book. It has survived not only five
-                      centuries, but also the leap into electronic.
+                      Incredible results! Their tailored marketing solutions
+                      propelled our brand to the forefront. The dedication to
+                      understanding our unique needs sets them apart. Highly
+                      recommended!
                     </p>
                   </div>
                 </div>
@@ -588,8 +755,8 @@
                       class="content-slider-1 d-flex justify-content-between"
                     >
                       <div class="content-slide d-flex align-items-center">
-                        <img src="./Images/small-img.png" alt="" />
-                        <p>Christina Jim</p>
+                        <img src="./Images/test2.png" class="imd-dim" alt="" />
+                        <p>Johnathan D. -CEO, Tech Innovations Inc.</p>
                       </div>
                       <div class="content-slide-2">
                         <i class="fa-solid fa-star"></i>
@@ -600,12 +767,10 @@
                       </div>
                     </div>
                     <p id="customer-content-para">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a
-                      type specimen book. It has survived not only five
-                      centuries, but also the leap into electronic.
+                      Exceptional services! They seamlessly integrated
+                      cutting-edge technology into our operations, boosting
+                      efficiency and elevating our business to new heights.
+                      Truly a game-changer!
                     </p>
                   </div>
                 </div>
@@ -615,8 +780,8 @@
                       class="content-slider-1 d-flex justify-content-between"
                     >
                       <div class="content-slide d-flex align-items-center">
-                        <img src="./Images/small-img.png" alt="" />
-                        <p>Christina Jim</p>
+                        <img src="./Images/test3.png" class="imd-dim" alt="" />
+                        <p>Sarah M. - IT Manager</p>
                       </div>
                       <div class="content-slide-2">
                         <i class="fa-solid fa-star"></i>
@@ -627,12 +792,10 @@
                       </div>
                     </div>
                     <p id="customer-content-para">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a
-                      type specimen book. It has survived not only five
-                      centuries, but also the leap into electronic.
+                      Outstanding tech support! Their 24/7 availability and
+                      swift resolutions to our IT challenges have been
+                      invaluable. A professional team dedicated to ensuring our
+                      systems run seamlessly.
                     </p>
                   </div>
                 </div>
@@ -642,8 +805,8 @@
                       class="content-slider-1 d-flex justify-content-between"
                     >
                       <div class="content-slide d-flex align-items-center">
-                        <img src="./Images/small-img.png" alt="" />
-                        <p>Christina Jim</p>
+                        <img src="./Images/test4.png" class="imd-dim" alt="" />
+                        <p>Michael S. - CFO</p>
                       </div>
                       <div class="content-slide-2">
                         <i class="fa-solid fa-star"></i>
@@ -654,66 +817,10 @@
                       </div>
                     </div>
                     <p id="customer-content-para">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a
-                      type specimen book. It has survived not only five
-                      centuries, but also the leap into electronic.
-                    </p>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="card customer-slide-card">
-                    <div
-                      class="content-slider-1 d-flex justify-content-between"
-                    >
-                      <div class="content-slide d-flex align-items-center">
-                        <img src="./Images/small-img.png" alt="" />
-                        <p>Christina Jim</p>
-                      </div>
-                      <div class="content-slide-2">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                      </div>
-                    </div>
-                    <p id="customer-content-para">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a
-                      type specimen book. It has survived not only five
-                      centuries, but also the leap into electronic.
-                    </p>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="card customer-slide-card">
-                    <div
-                      class="content-slider-1 d-flex justify-content-between"
-                    >
-                      <div class="content-slide d-flex align-items-center">
-                        <img src="./Images/small-img.png" alt="" />
-                        <p>Christina Jim</p>
-                      </div>
-                      <div class="content-slide-2">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                      </div>
-                    </div>
-                    <p id="customer-content-para">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a
-                      type specimen book. It has survived not only five
-                      centuries, but also the leap into electronic.
+                      Reliable financial services! Their team's expertise in
+                      financial dynamics significantly streamlined our
+                      processes. Accurate, efficient, and always available – a
+                      trusted partner indeed.
                     </p>
                   </div>
                 </div>
@@ -729,11 +836,7 @@
 
     <!-- Together Section start -->
 
-    <section
-      class="together-section"
-      data-aos="fade-up"
-      data-aos-duration="1500"
-    >
+    <section class="together-section">
       <div class="container-fluid">
         <div class="container">
           <div class="together-content">
@@ -765,7 +868,7 @@
     <!-- Together Section start -->
 
     <!-- Partners Start -->
-    <section class="partners" data-aos="fade-up" data-aos-duration="1500">
+    <section class="partners">
       <div class="container">
         <img src="./Images/partners.png" alt="" />
       </div>
